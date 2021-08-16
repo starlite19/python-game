@@ -104,7 +104,7 @@ def main():
     while not game_exit:
         gameDisplay.fill(BG_COLOR)
         pygame.draw.rect(gameDisplay, WHITE, (100, 60, 477, 477))
-        displayMessage('Click a tile and press arrow keys to slide.', 5, 5)
+        displayMessage('Click a tile and press arrow (or WASD) keys to slide.', 5, 5)
         if currentPositions == solvedPositions:
             displayImage()
         button("RESET", 650, 400, 100, 50, BUTTON_COLOR, HOVER_BUTTON, reset)
